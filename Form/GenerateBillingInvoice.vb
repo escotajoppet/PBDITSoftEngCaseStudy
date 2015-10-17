@@ -13,6 +13,10 @@ Public Class GenerateBillingInvoice
 
     Private Sub GenerateBillingInvoice_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         step1()
+
+        If Employee.all.Length < 1 Then
+            step1NextBtn.Enabled = False
+        End If
     End Sub
 
     Private Sub GenerateBillingInvoice_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed

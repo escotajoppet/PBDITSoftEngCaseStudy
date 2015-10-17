@@ -11,6 +11,13 @@
     End Sub
 
     Private Sub EmployeesCMSForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        rowIndex = -1
+
+        If Employee.all.Length < 1 Then
+            editEmployeeBtn.Enabled = False
+            deleteEmployeeBtn.Enabled = False
+        End If
+
         viewEmployeesPage()
     End Sub
 

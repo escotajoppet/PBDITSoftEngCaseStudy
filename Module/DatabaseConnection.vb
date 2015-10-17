@@ -96,8 +96,7 @@ Module DatabaseConnection
         End If
     End Function
 
-    ' private methods
-    Private Function connectionEstablished() As Boolean
+    Public Function connectionEstablished() As Boolean
         Try
             If dbCon.State = ConnectionState.Closed Then
                 dbCon.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath & "\PBDITSoftwareEngineeringCaseStudyDB.accdb"

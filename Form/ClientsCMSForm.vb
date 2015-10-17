@@ -14,6 +14,13 @@ Public Class ClientsCMSForm
     End Sub
 
     Private Sub ClientsCMSForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        rowIndex = -1
+
+        If Client.all.Length < 1 Then
+            editClientBtn.Enabled = False
+            deleteClientBtn.Enabled = False
+        End If
+
         viewClientsPage()
     End Sub
 

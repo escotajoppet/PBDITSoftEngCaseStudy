@@ -36,7 +36,19 @@
     End Sub
 
     Private Sub MainMenuForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' for testing purposes only :)
+        If Not DatabaseConnection.connectionEstablished Then
+            MsgBox("Error: can't establish connection to database", MsgBoxStyle.Critical)
+
+            mainMenuGB.Text = "Can't establish connection to database"
+
+            employeesCMSBtn.Enabled = False
+            clientsCMSBtn.Enabled = False
+            projectsCMStBtn.Enabled = False
+            assignEmployeeBtn.Enabled = False
+            logInOutBtn.Enabled = False
+            searchBtn.Enabled = False
+            generateBillingInvoiceBtn.Enabled = False
+        End If
     End Sub
 End Class
 

@@ -4,6 +4,13 @@
     Dim rowIndex As Integer
 
     Private Sub ProjectsCMSForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        rowIndex = -1
+
+        If Project.all.Length < 1 Then
+            projectEditBtn.Enabled = False
+            projectDeleteBtn.Enabled = False
+        End If
+
         Dim temp As String = InputBox("Set Client CODE", "Client Code", " ")
 
         If temp = " " Then

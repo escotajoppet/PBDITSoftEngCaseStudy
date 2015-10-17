@@ -12,6 +12,11 @@
         populateEmployeesDataGridView(employeesDGV, Employee.all)
 
         empRowIndex = -1
+
+        If Employee.all.Length < 1 Then
+            assignBtn.Enabled = False
+            unassignBtn.Enabled = False
+        End If
     End Sub
 
     Private Sub backToMainMenuBtn_Click(sender As Object, e As EventArgs) Handles backToMainMenuBtn.Click
