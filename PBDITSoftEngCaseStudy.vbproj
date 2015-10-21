@@ -23,9 +23,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -59,6 +60,18 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F944318C5EC6D7D7D0900AABDD1C37903E65788A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PBDITSoftEngCaseStudy_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -153,6 +166,11 @@
     <Compile Include="Form\ProjectsCMSForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PBDITSoftwareEngineeringCaseStudyDBDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PBDITSoftwareEngineeringCaseStudyDBDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form\AssignmentCMSForm.resx">
@@ -231,6 +249,18 @@
     <None Include="bin\Debug\icons\list.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PBDITSoftEngCaseStudy_TemporaryKey.pfx" />
+    <None Include="PBDITSoftwareEngineeringCaseStudyDBDataSet.xsc">
+      <DependentUpon>PBDITSoftwareEngineeringCaseStudyDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PBDITSoftwareEngineeringCaseStudyDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PBDITSoftwareEngineeringCaseStudyDBDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PBDITSoftwareEngineeringCaseStudyDBDataSet.xss">
+      <DependentUpon>PBDITSoftwareEngineeringCaseStudyDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\add.png" />
   </ItemGroup>
   <ItemGroup>
@@ -244,6 +274,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Form\icons\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PBDITSoftwareEngineeringCaseStudyDB.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="PBDITSoftwareEngineeringCaseStudyDB.accdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

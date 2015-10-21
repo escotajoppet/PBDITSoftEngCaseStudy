@@ -22,9 +22,9 @@ Partial Class EmployeesCMSForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.viewEmployeesGB = New System.Windows.Forms.GroupBox()
         Me.deleteEmployeeBtn = New System.Windows.Forms.Button()
@@ -41,6 +41,8 @@ Partial Class EmployeesCMSForm
         Me.crudAddEmployeeBtn = New System.Windows.Forms.Button()
         Me.cancelAddEditBtn = New System.Windows.Forms.Button()
         Me.employeeFormGB = New System.Windows.Forms.GroupBox()
+        Me.employeePasswordTB = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.employeeBirthdateDTP = New System.Windows.Forms.DateTimePicker()
         Me.employeeRatePerHourTB = New System.Windows.Forms.TextBox()
         Me.employeeMiddleNameTB = New System.Windows.Forms.TextBox()
@@ -57,8 +59,6 @@ Partial Class EmployeesCMSForm
         Me.employeeRatePerHourLbl = New System.Windows.Forms.Label()
         Me.employeeTypeLbl = New System.Windows.Forms.Label()
         Me.backToMainMenuBtn = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.employeePasswordTB = New System.Windows.Forms.TextBox()
         Me.viewEmployeesGB.SuspendLayout()
         CType(Me.employeesDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.employeeFormGB.SuspendLayout()
@@ -115,35 +115,35 @@ Partial Class EmployeesCMSForm
         '
         Me.employeesDGV.AllowUserToAddRows = False
         Me.employeesDGV.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.employeesDGV.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.employeesDGV.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
         Me.employeesDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.employeesDGV.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.employeeIDCol, Me.employeeNumberCol, Me.employeeLastNameCol, Me.employeeFirstNameCol, Me.employeeMiddleNameCol, Me.employeeBirthdateCol, Me.employeeRatePerHourCol, Me.employeeTypeCol})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.employeesDGV.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.employeesDGV.DefaultCellStyle = DataGridViewCellStyle8
         Me.employeesDGV.Location = New System.Drawing.Point(9, 39)
         Me.employeesDGV.Name = "employeesDGV"
         Me.employeesDGV.ReadOnly = True
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.employeesDGV.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.employeesDGV.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
         Me.employeesDGV.RowHeadersVisible = False
         Me.employeesDGV.Size = New System.Drawing.Size(538, 343)
         Me.employeesDGV.TabIndex = 22
@@ -248,6 +248,24 @@ Partial Class EmployeesCMSForm
         Me.employeeFormGB.TabIndex = 26
         Me.employeeFormGB.TabStop = False
         Me.employeeFormGB.Visible = False
+        '
+        'employeePasswordTB
+        '
+        Me.employeePasswordTB.Location = New System.Drawing.Point(96, 327)
+        Me.employeePasswordTB.Name = "employeePasswordTB"
+        Me.employeePasswordTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.employeePasswordTB.Size = New System.Drawing.Size(451, 20)
+        Me.employeePasswordTB.TabIndex = 18
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(6, 331)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(56, 13)
+        Me.Label1.TabIndex = 17
+        Me.Label1.Text = "Password:"
         '
         'employeeBirthdateDTP
         '
@@ -396,24 +414,6 @@ Partial Class EmployeesCMSForm
         Me.backToMainMenuBtn.Size = New System.Drawing.Size(29, 27)
         Me.backToMainMenuBtn.TabIndex = 26
         Me.backToMainMenuBtn.UseVisualStyleBackColor = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(6, 331)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(56, 13)
-        Me.Label1.TabIndex = 17
-        Me.Label1.Text = "Password:"
-        '
-        'employeePasswordTB
-        '
-        Me.employeePasswordTB.Location = New System.Drawing.Point(96, 327)
-        Me.employeePasswordTB.Name = "employeePasswordTB"
-        Me.employeePasswordTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.employeePasswordTB.Size = New System.Drawing.Size(451, 20)
-        Me.employeePasswordTB.TabIndex = 18
         '
         'EmployeesCMSForm
         '
